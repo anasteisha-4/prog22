@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	int y; bool fl = false;
+	std::cin >> y;
+	int x = y + 1;
+	std::string neww;
+	while (!fl) {
+		neww = std::to_string(x);
+		if (neww.rfind(neww[0]) == neww.find(neww[0]) && neww.rfind(neww[1]) == neww.find(neww[1]) &&
+			neww.rfind(neww[2]) == neww.find(neww[2]) && neww.rfind(neww[3]) == neww.find(neww[3])) {
+			std::cout << neww;
+			fl = true;
+		}
+		x++;
+	}
+	return 0;
+}
