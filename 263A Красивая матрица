@@ -1,0 +1,10 @@
+#include <iostream>
+
+int main() {
+    int i = 0, num = 0;
+    for (; num == 0; i += 1) {
+        std::cin >> num;
+    }
+    i --;
+    std::cout << std::abs(i % 5 - 2) + std::abs(i / 5 - 2);
+}
