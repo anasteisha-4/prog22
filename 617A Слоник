@@ -1,0 +1,38 @@
+﻿#include <iostream>
+
+int main()
+{
+	int x;
+	std::cin >> x;
+	int cnt = 0;
+	while (x > 0) {
+		if (x >= 5) {
+			x -= 5;
+			cnt++;
+		}
+		else {
+			if (x >= 4) {
+				x -= 4;
+				cnt++;
+			}
+			else {
+				if (x >= 3) {
+					x -= 3;
+					cnt++;
+				}
+				else {
+					if (x >= 2) {
+						x -= 2;
+						cnt++;
+					}
+					else {
+						x -= 1;
+						cnt++;
+					}
+				}
+			}
+		}
+	}
+	std::cout << cnt;
+	return 0;
+}
